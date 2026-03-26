@@ -1,89 +1,124 @@
+
 body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(41, 39, 39);
+    margin: 0;      /*set the page margin, this case, to none, leaving everthing in the size of the page.*/
+    background-color: #0a1429;  /*background's color*/
+    color: #ffffff;             /*page's text color*/
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+nav {
+    background-color: #010A13;
+    padding: 20px;                /*space between the content and border.*/
+    
 }
 
-header nav ul li {
-    display: inline;
-    margin-right: 80px;
-}
-
-header nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-header nav ul li a:hover {
-    text-decoration: none;
-    color: white;
-}
-
-main { 
-    padding: 50px 80px;
-    font-size: 20px;
-    color: white;
-}
-
-section {
-    padding: 20px 0;
-}
-
-footer {
-    background-color: rgb(136, 136, 27);
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 30px 0;
-    font-size: 20px;
-}
-
-h1 {
-    font-size: 60px;
-    margin: 80px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    border: 5px solid rgb(255, 255, 255);
-}
-
-h2 {
-    font-size: 35px;
-    text-align: center;
-    color: white;
-}
-
-p {
-    text-align: justify;
-}
-
-img {
-    width: 70%;
-    height: auto;
-    border: 5px solid rgb(136, 136, 27);
-}
-
-#dov {
+nav ul {    /*in this section, i just customize the unordered list and the space it occupies.*/
+    list-style: none;      /*this's to customizing "topics", but i prefer to remove it.*/
+    padding: 0;         /*remove the space the "o" occupies.*/
     display: flex;
     justify-content: center;
 }
 
-#pesquisa {
-    background-color: rgb(136, 136, 27);
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
+nav ul li {
+    display: inline;    /* leave each element in the same line.*/
+    margin-right: 30px;
 }
 
-#banner {
-    background-image: url("../imagens/banner.jpg");
-    padding: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
+nav a {
+    text-decoration: none;      /*remove any decoration, the unedrscore(_) in words*/
+    color: #F0E6D2;         /*set the color of the nav bar.*/
+    font-size: 20px;
 }
+
+nav a:hover {   /*The "hover" is used to set events about, in this case, the words contained in "a". */
+    color: #C89B3C;
+}
+
+footer {
+    background-color: #010A13;
+    text-align: center;
+    padding: 20px;
+}
+
+p, i {
+    text-align: justify;
+    padding: 10px;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 5px 5px 2px black;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px black;
+    -webkit-text-stroke: 1px black;
+}
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px black;
+}
+
+h4 {
+    text-align: left;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.formatacao_text {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../imagens/banner.jpg);
+    height: 300px;                  /*it sets height (altura).*/
+    background-size: cover;         /*it sets the size of the background images.*/
+    background-position: center;
+    display: flex;                  /*"display" set how an element is rendered and positioned in the page.*/
+    justify-content: center;    /*(alinha) the items, in this case, in center. */
+    align-items: center;        /*this's same thing of (cima), but in vertical.*/
+    flex-direction: column;
+}
+
+.banner h1, h2 {
+    margin: 0;
+}
+
+.banner_campeoes {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../imagens/campeoesGeral.jpg);
+}
+
+.banner_runas {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../imagens/todasRunas.jpg);
+    background-position: top;
+}
+
+.banner_rotas {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../imagens/rotasTodas.jpg);
+}
+
+.banner_objetivos {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../imagens/objetivoPrincipalArte.jpg);
+}
+
+.banner_itens {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../imagens/itensGeral.jpg);
+}
+    
